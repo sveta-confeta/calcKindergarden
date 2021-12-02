@@ -3,7 +3,7 @@
 }
 
 
-table {
+table#tbl{
     font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
     font-size: 14px;
     border-radius: 10px;
@@ -14,52 +14,85 @@ table {
     padding-top: 40px;
  
     }
-    th {
+    #tbl th {
     background: #BCEBDD;
     color: rgb(248, 89, 89);
   
     padding: 10px 20px;
     }
-    th, td {
+    #tbl th, #tbl td {
     border-style: solid;
     border-width: 0 1px 1px 0;
     border-color: white;
     }
-    td:first-child {
+    #tbl td:first-child {
    background-color: rgb(241, 201, 239);
     }
-    th:first-child {
+    #tbl th:first-child {
     border-top-left-radius: 10px;
     }
-    th:last-child {
+    #tbl th:last-child {
     border-top-right-radius: 10px;
     border-right: none;
     }
-    td {
+    #tbl td {
     padding: 10px 20px;
     background: #F8E391;
     }
-    tr:last-child td:first-child {
+    #tbl tr:last-child td:first-child {
     border-radius: 0 0 0 10px;
     }
-    tr:last-child td:last-child {
+    #tbl tr:last-child td:last-child {
     border-radius: 0 0 10px 0;
     }
-    tr td:last-child {
+    #tbl tr td:last-child {
     border-right: none;
     }
 
-    .elem1{
-        border:1px solid rgb(245, 82, 82);
-        margin: 30px 0;
-    }
-    h2{
-        text-align: center;
-    }
-    ol{
-        margin-left:30%;
-    }
+    
 
-    tr:hover td{
+    #tbl tr:hover td{
         background: rgba(83, 73, 73, 0.438) ;
     }
+
+    table#tbl-res1 {
+        font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+        text-align: left;
+        border-collapse: separate;
+        border-spacing: 5px;
+        background: #ECE9E0;
+        color: #656665;
+        border: 16px solid #ECE9E0;
+        border-radius: 20px;
+        margin: 40px auto;
+       
+        }
+        #tbl-res1 th {
+        font-size: 16px;
+        padding: 10px;
+        }
+        #tbl-res1 td {
+        background: #F5D7BF;
+        padding: 10px;
+        }
+
+        table#tbl-res2 {
+            font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+            text-align: left;
+            border-collapse: separate;
+            border-spacing: 5px;
+            background: #ECE9E0;
+            color: #656665;
+            border: 16px solid #ECE9E0;
+            border-radius: 20px;
+            margin: 40px auto;
+           
+            }
+            #tbl-res2 th {
+            font-size: 16px;
+            padding: 10px;
+            }
+            #tbl-res2 td {
+            background: #F5D7BF;
+            padding: 10px;
+            }
