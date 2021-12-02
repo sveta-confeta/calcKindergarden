@@ -76,7 +76,7 @@ table#tbl{
         padding: 10px;
         }
 
-        table#tbl-res2 {
+        table#tblRes2 {
             font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
             text-align: left;
             border-collapse: separate;
@@ -88,11 +88,11 @@ table#tbl{
             margin: 40px auto;
            
             }
-            #tbl-res2 th {
+            #tblRes2 th {
             font-size: 16px;
             padding: 10px;
             }
-            #tbl-res2 td {
+            #tblRes2 td {
             background: #F5D7BF;
             padding: 10px;
             }

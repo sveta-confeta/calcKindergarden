@@ -1,6 +1,7 @@
 let calc=document.querySelectorAll('#calc');//1 столбец
 let calc2=document.querySelectorAll('#calc2');// 2 столбец
-let calc3=document.querySelectorAll('#calc3');
+let calc3=document.querySelectorAll('#calc3'); //  1 таблица расходов
+let calc4=document.querySelectorAll('#calc4');//  2 таблица расходов
 
 
 //основная таблица : итоги 1 столбец
@@ -22,7 +23,7 @@ for(let i=1;i<=calc2.length;i++){
 }
 document.all.tbl.rows[23].cells[3].innerText=result2 ;
 
-// 1bтаблица расходов
+// 1 таблица расходов
 let result3=result;
 
 for(let i=1;i<=calc3.length;i++){
@@ -30,3 +31,12 @@ result3=result3-Number(document.all.tblRes1.rows[i].cells[2].innerText)
    
 }
 document.all.tblRes1.rows[10].cells[2].innerText=result3 ;
+
+// 2 таблица расходов
+let result4=result3+result2;
+
+for(let i=1;i<=calc4.length;i++){
+result4=result4-Number(document.all.tblRes2.rows[i].cells[2].innerText)
+   
+}
+document.all.tblRes2.rows[10].cells[2].innerText=result4 ;
