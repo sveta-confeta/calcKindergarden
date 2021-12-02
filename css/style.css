@@ -55,7 +55,7 @@ table#tbl{
         background: rgba(83, 73, 73, 0.438) ;
     }
 
-    table#tbl-res1 {
+    table#tblRes1 {
         font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
         text-align: left;
         border-collapse: separate;
@@ -67,11 +67,11 @@ table#tbl{
         margin: 40px auto;
        
         }
-        #tbl-res1 th {
+        #tblRes1 th {
         font-size: 16px;
         padding: 10px;
         }
-        #tbl-res1 td {
+        #tblRes1 td {
         background: #F5D7BF;
         padding: 10px;
         }
