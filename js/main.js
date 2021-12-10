@@ -39,4 +39,13 @@ for(let i=1;i<=calc4.length;i++){
 result4=result4-Number(document.all.tblRes2.rows[i].cells[2].innerText)
    
 }
-document.all.tblRes2.rows[11].cells[2].innerText=result4 ;
+document.all.tblRes2.rows[13].cells[2].innerText=result4.toFixed(1) ;
+
+// 3 таблица расходов
+let result5=result4+result3;
+
+for(let i=1;i<=calc5.length;i++){
+result5=result5-Number(document.all.tblRes2.rows[i].cells[2].innerText)
+   
+}
+document.all.tblRes2.rows[13].cells[2].innerText=result4.toFixed(1) ;
