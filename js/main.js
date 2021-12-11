@@ -1,7 +1,9 @@
 let calc=document.querySelectorAll('#calc');//1 столбец
 let calc2=document.querySelectorAll('#calc2');// 2 столбец
+let calc5=document.querySelectorAll('#calc5');// 3 столбец
 let calc3=document.querySelectorAll('#calc3'); //  1 таблица расходов
 let calc4=document.querySelectorAll('#calc4');//  2 таблица расходов
+let calc6=document.querySelectorAll('#calc6');//  3 таблица расходов
 
 
 //основная таблица : итоги 1 столбец
@@ -23,6 +25,17 @@ for(let i=1;i<=calc2.length;i++){
 }
 document.all.tbl.rows[23].cells[3].innerText=result2 ;
 
+//основная таблица : итоги 3 столбец
+
+let result6=0;
+
+for(let i=1;i<=calc5.length;i++){
+    result6=result6+Number(document.all.tbl.rows[i].cells[4].innerText) ;
+   
+}
+document.all.tbl.rows[23].cells[4].innerText=result6 ;
+
+
 // 1 таблица расходов
 let result3=result;
 
@@ -39,13 +52,13 @@ for(let i=1;i<=calc4.length;i++){
 result4=result4-Number(document.all.tblRes2.rows[i].cells[2].innerText)
    
 }
-document.all.tblRes2.rows[13].cells[2].innerText=result4.toFixed(1) ;
+document.all.tblRes2.rows[11].cells[2].innerText=result4.toFixed(1) ;
 
 // 3 таблица расходов
-let result5=result4+result3;
+let result5=result4+result6;
 
-for(let i=1;i<=calc5.length;i++){
-result5=result5-Number(document.all.tblRes2.rows[i].cells[2].innerText)
+for(let i=1;i<=calc6.length;i++){
+result5=result5-Number(document.all.tblRes3.rows[i].cells[2].innerText)
    
 }
-document.all.tblRes2.rows[13].cells[2].innerText=result4.toFixed(1) ;
+document.all.tblRes3.rows[10].cells[2].innerText=result5.toFixed(1) ;
