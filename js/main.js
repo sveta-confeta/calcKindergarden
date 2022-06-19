@@ -61,4 +61,4 @@ for(let i=1;i<=calc6.length;i++){
 result5=result5-Number(document.all.tblRes3.rows[i].cells[2].innerText)
    
 }
-document.all.tblRes3.rows[21].cells[2].innerText=result5.toFixed(1) ;
+document.all.tblRes3.rows[22].cells[2].innerText=result5.toFixed(1) ;
