@@ -14,26 +14,26 @@ for(let i=1;i<=calc.length;i++){
    
 }
 
-document.all.tbl.rows[23].cells[2].innerText=result ;
+document.all.tbl.rows[24].cells[2].innerText=result ;
 
 //основная таблица : итоги 2 столбец
 
-let result2=0;
-for(let i=1;i<=calc2.length;i++){
-    result2=result2+Number(document.all.tbl.rows[i].cells[3].innerText) ;
+// let result2=0;
+// for(let i=1;i<=calc2.length;i++){
+//     result2=result2+Number(document.all.tbl.rows[i].cells[3].innerText) ;
    
-}
-document.all.tbl.rows[23].cells[3].innerText=result2 ;
+// }
+// document.all.tbl.rows[23].cells[3].innerText=result2 ;
 
 //основная таблица : итоги 3 столбец
 
-let result6=0;
+// let result6=0;
 
-for(let i=1;i<=calc5.length;i++){
-    result6=result6+Number(document.all.tbl.rows[i].cells[4].innerText) ;
+// for(let i=1;i<=calc5.length;i++){
+//     result6=result6+Number(document.all.tbl.rows[i].cells[4].innerText) ;
    
-}
-document.all.tbl.rows[23].cells[4].innerText=result6 ;
+// }
+// document.all.tbl.rows[23].cells[4].innerText=result6 ;
 
 
 // 1 таблица расходов
@@ -46,19 +46,19 @@ result3=result3-Number(document.all.tblRes1.rows[i].cells[2].innerText)
 document.all.tblRes1.rows[10].cells[2].innerText=result3 ;
 
 // 2 таблица расходов
-let result4=result3+result2;
+// let result4=result3+result2;
 
-for(let i=1;i<=calc4.length;i++){
-result4=result4-Number(document.all.tblRes2.rows[i].cells[2].innerText)
+// for(let i=1;i<=calc4.length;i++){
+// result4=result4-Number(document.all.tblRes2.rows[i].cells[2].innerText)
    
-}
-document.all.tblRes2.rows[11].cells[2].innerText=result4.toFixed(1) ;
+// }
+// document.all.tblRes2.rows[11].cells[2].innerText=result4.toFixed(1) ;
 
 // 3 таблица расходов
-let result5=result4+result6;
+// let result5=result4+result6;
 
-for(let i=1;i<=calc6.length;i++){
-result5=result5-Number(document.all.tblRes3.rows[i].cells[2].innerText)
+// for(let i=1;i<=calc6.length;i++){
+// result5=result5-Number(document.all.tblRes3.rows[i].cells[2].innerText)
    
-}
-document.all.tblRes3.rows[23].cells[2].innerText=result5.toFixed(1) ;
+// }
+// document.all.tblRes3.rows[23].cells[2].innerText=result5.toFixed(1) ;
