@@ -14,7 +14,7 @@ for(let i=1;i<=calc.length;i++){
    
 }
 
-document.all.tbl.rows[24].cells[2].innerText=result ;
+document.all.tbl.rows[23].cells[2].innerText=result ;
 
 //основная таблица : итоги 2 столбец
 
