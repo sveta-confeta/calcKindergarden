@@ -43,7 +43,7 @@ for(let i=1;i<=calc3.length;i++){
 result3=result3-Number(document.all.tblRes1.rows[i].cells[2].innerText)
    
 }
-document.all.tblRes1.rows[13].cells[2].innerText=result3.toFixed(1) ;
+document.all.tblRes1.rows[15].cells[2].innerText=result3.toFixed(1) ;
 
 // 2 таблица расходов
 // let result4=result3+result2;
