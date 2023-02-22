@@ -16,14 +16,14 @@ for(let i=1;i<=calc.length;i++){
 
 document.all.tbl.rows[22].cells[2].innerText=result ;
 
-//основная таблица : итоги 2 столбец
+// основная таблица : итоги 2 столбец
 
-// let result2=0;
-// for(let i=1;i<=calc2.length;i++){
-//     result2=result2+Number(document.all.tbl.rows[i].cells[3].innerText) ;
+let result2=0;
+for(let i=1;i<=calc2.length;i++){
+    result2=result2+Number(document.all.tbl.rows[i].cells[3].innerText) ;
    
-// }
-// document.all.tbl.rows[23].cells[3].innerText=result2 ;
+}
+document.all.tbl.rows[22].cells[3].innerText=result2 ;
 
 //основная таблица : итоги 3 столбец
 
@@ -46,13 +46,13 @@ result3=result3-Number(document.all.tblRes1.rows[i].cells[2].innerText)
 document.all.tblRes1.rows[15].cells[2].innerText=result3.toFixed(1) ;
 
 // 2 таблица расходов
-// let result4=result3+result2;
+let result4=result3+result2;
 
-// for(let i=1;i<=calc4.length;i++){
-// result4=result4-Number(document.all.tblRes2.rows[i].cells[2].innerText)
+for(let i=1;i<=calc4.length;i++){
+result4=result4-Number(document.all.tblRes2.rows[i].cells[2].innerText)
    
-// }
-// document.all.tblRes2.rows[11].cells[2].innerText=result4.toFixed(1) ;
+}
+document.all.tblRes2.rows[1].cells[2].innerText=result4.toFixed(1) ;
 
 // 3 таблица расходов
 // let result5=result4+result6;
