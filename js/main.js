@@ -49,7 +49,7 @@ document.all.tblRes1.rows[15].cells[2].innerText=result3.toFixed(1) ;
 let result4=result3+result2; //это остаток с 1 взноса + 2 взнос (92)
 let result8;
 
-// document.all.tblRes2.rows[1].cells[2].innerText=result4.toFixed(1) 
+
 
 for(let i=1;i<=calc4.length;i++){
     let res=Number(document.all.tblRes2.rows[i].cells[2].innerText)
