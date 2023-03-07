@@ -47,17 +47,19 @@ document.all.tblRes1.rows[15].cells[2].innerText=result3.toFixed(1) ;
 
 // 2 таблица расходов
 let result4=result3+result2; //это остаток с 1 взноса + 2 взнос (92)
+
 let result8;
 
 
 
-for(let i=1;i<=calc4.length;i++){
-    let res=Number(document.all.tblRes2.rows[i].cells[2].innerText)
-result8=result4-res;
-debugger
 
+for(let i=1;i<=calc4.length;i++){
+    result4=result4-Number(document.all.tblRes2.rows[i].cells[2].innerText)
+   
 }
-document.all.tblRes2.rows[2].cells[2].innerText=result8.toFixed(1) ;
+console.log(result4)
+
+document.all.tblRes2.rows[4].cells[2].innerText=result4.toFixed(1) ; //сдесь добавлять rows
 
 // 3 таблица расходов
 // let result5=result4+result6;
