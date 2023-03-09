@@ -59,7 +59,7 @@ for(let i=1;i<=calc4.length;i++){
 }
 console.log(result4)
 
-document.all.tblRes2.rows[4].cells[2].innerText=result4.toFixed(1) ; //сдесь добавлять rows
+document.all.tblRes2.rows[5].cells[2].innerText=result4.toFixed(1) ; //сдесь добавлять rows
 
 // 3 таблица расходов
 // let result5=result4+result6;
